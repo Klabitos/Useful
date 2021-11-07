@@ -1,0 +1,11 @@
+@keyframes crecerDisminuir {
+    from {transform: scale(1.0, 1.0);}
+    to {transform: scale(1.1, 1.1);}
+  }
+
+.objeto{
+    animation-name: crecerDisminuir;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
