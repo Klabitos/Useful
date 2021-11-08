@@ -1,0 +1,12 @@
+.contenedor {
+    background-color: white;
+    min-height: calc( 100vh - 20px );
+	/*La función calc realiza cálculos. 
+	  En este caso estamos diciendo que el alto
+	  debe medir el alto del viewport (viewport height, vh)
+	  menos 20 px.
+	*/
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 30px 0 30px;
+}
