@@ -1,0 +1,2 @@
+git checkout . 
+#nos vuelve al commit, es decir, elimina todo desde el ultimo commit
