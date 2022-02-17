@@ -1,0 +1,47 @@
+body{
+    background-color: beige;
+    border: 1px solid black;
+    padding: 1%;
+    margin: 1%;
+    height: 100%;
+}
+
+
+
+.verde{
+    background-color: green;
+}
+.rojo{
+    background-color: red;
+}
+.purple{
+    background-color: purple;
+}
+
+
+
+
+ .row .col{
+    text-align: center;
+    padding: 1px;
+    background-color: rgba(0, 128, 0, 0.692);
+    border: 1px solid rgb(2, 70, 2);
+}
+.row .col-4, .row .col-6{
+    text-align: center;
+    padding: 2px;
+    background-color: rgba(0, 128, 0, 0.692);
+    border: 1px solid rgb(2, 70, 2);
+}.row .col-auto{
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 128, 0, 0.692);
+    border: 1px solid rgb(2, 70, 2);
+}
+
+.row{
+    /*height: 200px PARA LOS ALIGN*/
+    padding: 2%;
+    background-color: greenyellow;
+    margin: 1%;
+}

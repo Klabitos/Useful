@@ -1,0 +1,29 @@
+body{
+    background-color: rgba(196, 193, 193, 0.651);
+}
+
+.header{
+    background-color: greenyellow;
+    color: white;
+    margin-bottom: 2%;
+}
+.mainAside{
+    margin-bottom: 2%;
+}
+
+.mainAside div:nth-of-type(1){
+    background-color: honeydew;
+}
+.mainAside div:nth-of-type(2){
+    background-color: grey;
+    color: blue;
+}
+.columnaAzul div{
+    background-color: lightskyblue;
+    color: white;
+    margin-bottom: 2%;
+}
+.footer{
+    background-color: black;
+    color: white;
+}

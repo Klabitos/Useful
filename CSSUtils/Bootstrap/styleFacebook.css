@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(129, 129, 122);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.form_comentarios textarea{
+    width: 100%;
+    height: 84px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 84px;
+    max-height: 300px;
+    padding: 10px;
+    line-height: 30px;
+    border: 1px solid blue;
+    margin-bottom: 20px;
+}
+
+.form_comentarios .btn{
+    background-color: blue;
+    border-radius: 0; /*Quitamos el redondedeo de bootstrap*/
+    color: white;
+    margin-bottom: 20px;
+}
+
+.form_comentarios .btn:hover{
+    box-shadow: 0px 0px 9px black;
+}
+
+.media{
+    border-top: 1px solid white;
+    padding-top: 20px;
+}
+
+.media img{
+    margin-right: 20px;
+}
+
+.media .nombre{
+    color: blue;
+    margin-bottom: 0;
+}
+
+.media .nombre span{
+    color: grey;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.media .comentario{
+    margin-top: 10px;
+}
+
+.media .botones{
+    margin-bottom: 10px;
+}
+
+.media .botones a{
+    color: white;
+    font-size: 14px;
+    margin-left: 20px;
+}

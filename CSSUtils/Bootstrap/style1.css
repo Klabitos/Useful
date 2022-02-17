@@ -1,0 +1,38 @@
+body{
+    background-color: beige;
+    border: 1px solid black;
+    padding: 1%;
+    margin: 1%;
+}
+
+
+
+.verde{
+    background-color: green;
+}
+.rojo{
+    background-color: red;
+}
+.purple{
+    background-color: purple;
+}
+
+
+
+.apartado2{
+    border: 1px solid black;
+    padding: 5%;
+}
+.apartado2 .row .col{
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 128, 0, 0.692);
+    border: 1px solid rgb(2, 70, 2);
+}
+
+.apartado2 .row{
+    height: 150px;
+    padding: 2%;
+    background-color: greenyellow;
+    margin: 1%;
+}

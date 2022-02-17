@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Button trigger nodal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Lanza el modal
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="1" aria-labelledby="examplefodalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="nodal-title" id="examplelodallabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ola k ase
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <style>
+            .kike-nav a {
+                color: 1#fff;
+                padding: 15px;
+            }
+
+            .kike-nav .disabled {
+                color: Orgba(255, 255, 255, .5);
+            }
+
+            .kike-nav a:hover {
+                background: Orgba(255, 255, 255, .1);
+            }
+        </style>
+        <div class="row">
+            <div class="col">
+                <h3>Menu con ul</h3>
+                <hr>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Proximamente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-12 mt-4">
+            <h3>Menu con estilos CSS</h3>
+            <hr>
+            <ul class="kike-nav nav bg-dark text-white">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link disabled">Proximamente</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-12 mt-4">
+            <h3>Menu con Nav</h3>
+            <hr>
+            <nav class="nav">
+                <a href="" class="nav-link">Inicio</a>
+                <a href="" class="nav-link">Blog</a>
+                <a href="" class="nav-link disabled">Proximamente</a>
+                <a href="" class="nav-link">Contacto</a>
+            </nav>
+        </div>
+        <div class="col-12 mt-4">
+            <h3>Alieando el menu</h3>
+            <hr>
+            <nav class="nav justify-content-center">
+                <a href="" class="nav-link">Inicio</a>
+                <a href="" class="nav-link">Blog</a>
+                <a href="" class="nav-link disabled">Proximamente</a>
+                <a href="" class="nav-link">Contacto</a>
+            </nav>
+        </div>
+        <div class="col-12 mt-4">
+            <h3>Menu Vertical</h3>
+            <hr>
+            <nav class="nav flex-column">
+                <a href="" class="nav-link">Inicio</a>
+                <a href="" class="nav-link">Blog</a>
+                <a href="" class="nav-link disabled">Proximamente</a>
+                <a href="" class="nav-link">Contacto</a>
+            </nav>
+        </div>
+    </div>
+    <!-- .navbar-expand-1g Sirve para indicar en que punto aparecera el toggler o hamburguer -->
+    <!-- .navbar-light Indicamos que usaremos un fondo claro, por tanto el texto será claro -->
+    <!--Indicamos que usaremos un fondo oscuro -->
+    <!--Establecemos un fondo light para el navbar -->
+    <!-- .navbar-dark             .bg-light
+    Tambien podemos darle nuestro propio color de fondo con CSS -->
+    <!-- .fixed-top
+         .fixed-bottom
+Nos permite fijar el menu en 1la parte superior (sticky) 
+    Nos permite fijar el menu en la parte inferior -->
+    <hr>
+    <h2>En pequeño de responsive queda guapo</h2>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- .container nos permite centrar el contenido de nuestro menu, esta clase es opcional -->
+        <div class="container">
+            <!-- Nos sirve para agregar un logotipo al menu, podría ir solo un texto -->
+            <a href="#" class="navbar-brand">
+                <img src="https://picsum.photos/150/50" alt="">
+            </a>
+            <!-- Nos permite usar el componente collapse para dispositivos moviles, conocido también como
+hamburguer. El atributo data-target tiene que hacer referencia al id-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mi-navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Este es el elemento contenedor, dentro de él irán el ul y los diferentes li-->
+            <div class="collapse navbar-collapse" id="mi-navbar">
+                <ul class="navbar-nav mr-auto">
+                    <!-- Es un margin right auto, nos empuja los elementos a la derecha-->
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Inicio </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="menu-categorias" data-bs-toggle="dropdown">
+                            Blog </a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">HTML</a>
+                            <a href="" class="dropdown-item">CSS</a>
+                            <a href="" class="dropdown-item">J5</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Proximamente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+                <!--Formulario inline (típico elemento de búsqueda)-->
+                <form action="" class="d-flex">
+                    <!--my significa margen arriga y abajo, lg en un tamaño grande-->
+                    <input type="text" class="form-control mr-sm-2" placeholder="Buscar">
+                    <button class="btn btn-primary my-s my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+        </nav>
+        <hr> <br>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav>
+                        <ul class="pagination">
+                            <!--Se suele poner disabled el priner elemento ya que si estoy en el 1 no puedo regresar-->
+                            <li class="page-item disabled">
+                                
+                                <span class="page-link">&laquo; Anterior</span>
+                            </li>
+                            <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                            <li class="page-item"><a href="#" class="page-link">2</a></li>
+                            <li class="page-item"><a href="#" class="page-link">3</a></li>
+                            <li class="page-item"><a href="#" class="page-link">4</a></li>
+                            <li class="page-item">
+                                <a href="" class="page-link">
+                                <span aria-hidden="true">siguiente &raquo; </span> </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <hr>
+                <div class="col">
+                    <!-- Centrado -->
+
+    <ul class="pagination d-flex justify-content-center">
+        <li class="page-item disabled">
+              <span class="page-link" aria-hidden="true">&laquo; Anterior</span>
+         </li>
+         <li class="page-item active"><a href="" class="page-link">1</a></li>
+        <li class="page-item"><a href="" class="page-link">2</a></li>
+        <li class="page-item"><a href="g" class="page-link">3</a</li>
+        <li class="page-item"><a href="" class="page-link">4</a></li>
+        <li class="page-item">
+             <a href="" class="page-link">
+                  Siguiente &raquo;
+             </a>
+         </li>
+    </ul>
+</nav>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
