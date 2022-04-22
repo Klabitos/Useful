@@ -1,0 +1,16 @@
+Comandos Tipicos:
+
+ng build (compila la app a otro directorio?)
+
+ng serve (lanza tu aplicación para que sea visible desde localhost 4200)
+ -- open (creo que la lanza)
+
+ng generate ... (genera lo que necesites) ruta
+<<no hace falta el guion>>
+-application 
+-class
+-component
+-module (no e cual es la diferencia)
+-interceptor
+-pipe
+-service (clase que llama a la API y gestiona datos)

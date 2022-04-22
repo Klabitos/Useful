@@ -1,0 +1,53 @@
+ANGULAR MATERIALS
+
+Online, consultar el getting started.
+Luego creas a la altura del app.module y material.module donde haces el export de lo que sea
+
+En material hay que importal lo que sea y luego en donde se use lo que sea hay que importar el matirial.module
+
+-------
+
+ROUTAS
+
+En app-routing,
+en la const routes: Routes = [
+
+	{path: 'loquesea', component: ElComponentQueSea},
+	{path: '**', component: ElComponentQueSea} //Para cualquier ruta
+	(También se puede poner una propiedad que sea redirecTo: '' que seria como a home, pathMatch:'full' (no se))
+]
+
+Y la tag es <router-link> ?
+Luego en un componente con enlace: <a [routerLink]="['/']"
+Y para ahcer el push: this.router.navigate(['/'])
+
+------
+@INPUT() product: Product; es como el props (product! si da error)
+y en el padre [product]="variable que sea"
+@OUTPUT() nombreEvento = new EventEmitter<Product o undifined>(); es como un emits,
+
+luego lo llamas con nombreEvento.emit()
+y EN EL PADRE SERIA --> (nombreEvento)="elMetodoQueSea "
+-----
+
+En app.module, hay que declarar los componewntes que usamos por ahi e importar las cosillas
+
+-----
+
+Se suelen hacer interfaces y service (para controlar una API y recibir datos)
+Para las peticiones se importa el HttpClientModule
+
+En el service, en el constructor, metemos en () un private http: HttpClient
+Ahora podemos hacer this.http.get("url")  (LO HACE EN UN METODO QUE DEVUELVE Observable<Product[]>)
+
+
+return this.http.get<Product[]>(URL)  ESTÁ USANDO LA INTERFACE
+
+EL SERVICE HABRIA QUE INICIARLO EN EL CONSTRUCTOR DE LO QUE SEA
+
+.service.ts 
+------
+
+PIPE
+
+{{ products | json }}
