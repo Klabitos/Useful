@@ -1,0 +1,3 @@
+Instalamos las dependendias:
+npm i -D @vue-leaflet/vue-leaflet
+Y ponemos el siguiente codigo (archivo.vue)
