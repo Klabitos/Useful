@@ -1,0 +1,11 @@
+Es recomendable crear una clase.js con las constantes y una por cada funcion tipo Utilies, para que luego hagas import de esas especificas.
+
+Esto seria algo como:
+
+export default class nombre{
+	
+	nombreMetofo(){
+		return loquesea;
+	}
+
+}

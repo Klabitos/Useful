@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <title>Prueba</title>
+</head>
+<body>
+    <h1 >Mandar archivo</h1>
+    <form action="">
+        <input type="file" id="input">
+        <h2 onclick="prueba()">Submit</h2>
+    </form>
+    <script>
+        // (B) "SAVE AS"
+        function prueba(){
+            console.log("a");
+            const fileInput = document.getElementById('input');
+            fileInput.onchange = () => {
+                const selectedFile = fileInput.files[0];
+                console.log(selectedFile);
+                var myFile = new File([selectedFile], "demo.png", {type: "image/png"});
+                saveAs(myFile);
+            }
+        }
+
+    </script>
+
+</body>
+</html>

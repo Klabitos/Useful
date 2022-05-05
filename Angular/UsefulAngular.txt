@@ -51,3 +51,17 @@ EL SERVICE HABRIA QUE INICIARLO EN EL CONSTRUCTOR DE LO QUE SEA
 PIPE
 
 {{ products | json }}
+
+
+-----
+PROMESAS? Aqui se usan observables.
+
+Luego para mostrarlas y resolverlas es con nombrePromesa$ | async
+(por convenio a las promesas se les pone $ al final, luego se usa el pipe ese para resolverlas)
+
+
+
+
+-----
+
+Constructor, se usa en el component.ts para importar como clases enteras? Como el service o asi
