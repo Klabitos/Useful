@@ -1,0 +1,13 @@
+npm create vite@latest
+
+Eliges vue, react o lo que sea
+
+luego npm install
+
+USAREMOS CHAJRA PARA ESTILAR
+npm i @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^6 ++ Chakra provider en main.jsx // se puede hacer theme
+
+ROUTER
+npm install react-router-dom@6  //más configuración en main
+
+y para ver npm run dev
